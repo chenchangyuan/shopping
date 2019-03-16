@@ -1,0 +1,50 @@
+{
+  "name": "shopping",
+  "version": "1.0.0",
+  "description": "shopping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --mode development --history-api-fallback --open --config webpack.config.js",
+    "build": "webpack --progress --mode production --hide-modules --config webpack.prod.config.js"
+  },
+  "keywords": [
+    "webpack",
+    "vue.js",
+    "vuex",
+    "vue-router",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Jack Chen",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-runtime": "^6.26.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "style-loader": "^0.22.1",
+    "url-loader": "^1.1.1",
+    "vue-hot-reload-api": "^2.3.0",
+    "vue-loader": "^15.4.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  }
+}
