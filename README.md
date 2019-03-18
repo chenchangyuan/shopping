@@ -267,10 +267,15 @@ const store = new Vuex.Store({
 项目地址: [github](https://github.com/chenchangyuan/shopping)
 
 笔者个人微信
+
 ![](https://user-gold-cdn.xitu.io/2019/3/18/16990e592a3e907e?w=427&h=426&f=png&s=205655)
+
 笔者公众号
+
 ![](https://user-gold-cdn.xitu.io/2019/3/18/16990e2190fcb7e9?w=307&h=302&f=png&s=39675)
+
 技术交流群[微信]
+
 ![](https://user-gold-cdn.xitu.io/2019/3/18/16990e5b0d2d40ba?w=468&h=614&f=png&s=89128)
 
 ## 参考资料
