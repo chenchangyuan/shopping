@@ -1,20 +1,25 @@
-# shopping
+# Vue实现电商网站项目
 `vue` + `vue-router` + `vuex`实现电商网站
 
-# install
+## 效果展示
+
+![](https://user-gold-cdn.xitu.io/2019/3/18/16990d6fd5380b63?w=991&h=606&f=gif&s=709516)
+
+## install
 + 下载代码: `git clone https://github.com/chenchangyuan/shopping.git`
 + 安装依赖: `npm install`
 + 启动项目: `npm run dev`
 > 运行环境: [node v9.11.1](https://nodejs.org/zh-cn/download/ 'Node.js') *npm 5.6.0*
 
-# 需求分析
+## 需求分析
 1. 登录页面、商品列表页（网站首页）、购物车页（实现结算）、商品详情页
 2. 可按颜色、品牌对商品进行筛选，单击选中，再次点击取消
 3. 根据价格进行升序降序、销量降序排列
 4. 商品列表显示图片、名称、销量、颜色、单价
 5. 实时显示购物车数量（商品类别数）
 6. 购物车页面实现商品总价、总数进行结算，优惠券打折
-# 数据存储 & 数据处理
+
+## 数据存储 & 数据处理
 * `product.js`存放商品数据（生产环境需通过接口调用获取数据）
 
 ```javascript
@@ -107,7 +112,7 @@ handleOrder(){
 },
 ```
 
-# vue-router & vuex
+## vue-router & vuex
 **vue-router路由管理**`/src/views/`目录下的`vue`组件进行设置，`router-views`挂载所有路由，登录界面与商品列表页面之间header做隐藏显示处理，登录状态下刷新页面跳转至列表页，其他页面设置默认跳转
 
 **跳转处理**
@@ -255,11 +260,19 @@ const store = new Vuex.Store({
 });
 ```
 
-# 后记
-本项目是参考[iview](https://www.iviewui.com/)作者[Aresn](https://github.com/icarusion)书写的《[Vue.js实战](https://item.jd.com/12215519.html 'Vue.js实战')》一书，这本书循序渐进地对vue框架进行讲解，言语简洁、意思明了，适合着手Vue框架的FE，遗憾的是作者没有给出全部源码，我想应该是让读者手动实践，更加深入理解其原理。
+## 后记
+本项目是参考[iview](https://www.iviewui.com/)作者[Aresn](https://github.com/icarusion)书写的《[Vue.js实战](https://item.jd.com/12215519.html Vue.js实战)》一书，这本书循序渐进地对vue框架进行讲解，言语简洁、意思明了，适合着手Vue框架的FE，遗憾的是作者没有给出全部源码，我想应该是让读者手动实践，更加深入理解其原理。
 > 在原项目上新增了登录功能
 
-# 参考资料
+项目地址: [github](https://github.com/chenchangyuan/shopping)
+
+笔者个人微信
+![](https://user-gold-cdn.xitu.io/2019/3/18/16990e592a3e907e?w=427&h=426&f=png&s=205655)
+笔者公众号
+![](https://user-gold-cdn.xitu.io/2019/3/18/16990e2190fcb7e9?w=307&h=302&f=png&s=39675)
+技术交流群[微信]
+![](https://user-gold-cdn.xitu.io/2019/3/18/16990e5b0d2d40ba?w=468&h=614&f=png&s=89128)
+
+## 参考资料
 [Vue.js实战](https://item.jd.com/12215519.html 'Vue.js实战')
 [Vue.js](https://cn.vuejs.org/ 'Vue.js')
-
