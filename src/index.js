@@ -5,6 +5,7 @@ import Vuex from 'vuex';
 import App from './app.vue';
 import './style.css';
 import product_data from './product';
+import util from './util';
 Vue.use(VueRouter);
 Vue.use(Vuex);
 
@@ -26,28 +27,28 @@ router.beforeEach((to, from, next) => {
 router.afterEach((to, from, next) => {
     window.scrollTo(0, 0);
 });
-//数组去重
-function getFilterArray(array){
-    const set = new Set(array);
-    return [...set];
-}
+
 //配置Vuex状态管理
 const store = new Vuex.Store({
     state: {
         //商品列表信息
         productList: [],
         //购物车数据，数组形式，数据元素为对象（商品id，购买数量count）
-        cartList: []
+        cartList: [],
+        //当前用户账号
+        username: window.localStorage.getItem('username'),
+        //登录状态
+        loginStatus: !!window.localStorage.getItem('loginStatus'),
     },
     getters: {
         //品牌、颜色筛选
         brands: state => {
             const brands = state.productList.map(item => item.brand);
-            return getFilterArray(brands);
+            return util.getFilterArray(brands);
         },
         colors: state => {
             const colors = state.productList.map(item => item.color);
-            return getFilterArray(colors);
+            return util.getFilterArray(colors);
         }
     },
     //mutations只能以同步方式
@@ -79,8 +80,16 @@ const store = new Vuex.Store({
             const index = state.cartList.findIndex(item => item.id === id);
             state.cartList.splice(index, 1)
         },
+        //清空购物车
         emptyCart(state){
             state.cartList = [];
+        },
+        getUser(state, username){
+            console.log('username',username)
+            state.username = username;
+        },
+        getLoginStatus(state, flag){
+            state.loginStatus = flag;
         }
     },
     actions: {
@@ -104,8 +113,8 @@ const store = new Vuex.Store({
 });
 const app = new Vue({
     el: '#app',
-    router: router,
-    store: store,
+    router,
+    store,
     render: h => {
         return h(App)
     }

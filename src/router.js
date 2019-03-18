@@ -22,8 +22,15 @@ const routers = [
         component: (resolve) => require(['./views/cart.vue'], resolve)
     },
     {
+        path: '/login/:loginStatus',
+        meta: {
+            title: '购物车'
+        },
+        component: (resolve) => require(['./views/login.vue'], resolve)
+    },
+    {
         path: '*',
-        redirect: '/list'
+        redirect: '/login/login'
     }
 ];
 export default routers;
