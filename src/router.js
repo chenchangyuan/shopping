@@ -24,7 +24,7 @@ const routers = [
     {
         path: '/login/:loginStatus',
         meta: {
-            title: '购物车'
+            title: '登录注册'
         },
         component: (resolve) => require(['./views/login.vue'], resolve)
     },
