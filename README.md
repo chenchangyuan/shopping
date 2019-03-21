@@ -261,22 +261,11 @@ const store = new Vuex.Store({
 ```
 
 ## 后记
-本项目是参考[iview](https://www.iviewui.com/)作者[Aresn](https://github.com/icarusion)书写的《[Vue.js实战](https://item.jd.com/12215519.html 'Vue.js实战')》一书，这本书循序渐进地对vue框架进行讲解，言语简洁、意思明了，适合着手Vue框架的FE，遗憾的是作者没有给出全部源码，我想应该是让读者手动实践，更加深入理解其原理。
-> 在原项目上新增了登录功能
 
-项目地址: [github](https://github.com/chenchangyuan/shopping)
+项目地址: [github](https://github.com/chenchangyuan/shopping) 
+如果对你有所帮助，请start
 
-笔者个人微信
-
-![](https://user-gold-cdn.xitu.io/2019/3/18/16990e592a3e907e?w=427&h=426&f=png&s=205655)
-
-笔者公众号
-
-![](https://user-gold-cdn.xitu.io/2019/3/18/16990e2190fcb7e9?w=307&h=302&f=png&s=39675)
-
-技术交流群[微信]
-
-![](https://user-gold-cdn.xitu.io/2019/3/18/16990e5b0d2d40ba?w=468&h=614&f=png&s=89128)
+笔者个人微信 `gm4118679254` 欢迎加好友，一起沟通交流
 
 ## 参考资料
 [Vue.js实战](https://item.jd.com/12215519.html 'Vue.js实战')
